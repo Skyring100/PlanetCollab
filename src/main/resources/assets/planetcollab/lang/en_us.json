@@ -3,6 +3,7 @@
   "item.planetcollab.ghost_item": "Ghosty Thing",
   "block.planetcollab.ghost_block": "Ghosty Block",
   "block.planetcollab.snail" : "Snail",
+  "block.planetcollab.nerd_block": "Nerd Block",
   "itemGroup.maintab" : "Planet Collab",
   "itemGroup.dumbtab" : "Dumb Stuff"
 }

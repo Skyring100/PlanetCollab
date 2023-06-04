@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "planetcollab:block/nerd_block","y": 90  },
+    "facing=east": { "model": "planetcollab:block/nerd_block", "y": 180 },
+    "facing=south": { "model": "planetcollab:block/nerd_block", "y": 270 },
+    "facing=west": { "model": "planetcollab:block/nerd_block"}
+  }
+}
