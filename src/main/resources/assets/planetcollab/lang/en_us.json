@@ -1,5 +1,6 @@
 {
   "item.planetcollab.mars" : "Mars",
+  "item.planetcollab.ghost_item": "Ghosty Thing",
   "itemGroup.maintab" : "Planet Collab",
   "itemGroup.dumbtab" : "Dumb Stuff"
 }

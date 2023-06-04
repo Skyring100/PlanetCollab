@@ -13,7 +13,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab DUMB_TAB = new CreativeModeTab("dumbtab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.MARS.get());
+            return new ItemStack(ModItems.GHOST_ITEM.get());
         }
     };
 }
