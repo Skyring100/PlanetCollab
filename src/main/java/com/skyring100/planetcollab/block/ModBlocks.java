@@ -22,6 +22,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> GHOST_BLOCK = registerBlock("ghost_block", () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE).strength(1f)), ModCreativeModeTab.DUMB_TAB);
+    public static final RegistryObject<Block> SNAIL = registerBlock("snail", () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE).strength(1f)), ModCreativeModeTab.MAIN_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
        RegistryObject<T> toReturn  = BLOCKS.register(name, block);

@@ -3,6 +3,8 @@ package com.skyring100.planetcollab;
 import com.mojang.logging.LogUtils;
 import com.skyring100.planetcollab.block.ModBlocks;
 import com.skyring100.planetcollab.item.ModItems;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -48,9 +50,8 @@ public class PlanetCollab {
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        //to render complex blocks properly
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.SNAIL.get(), RenderType.cutout());
     }
     /*
     private void enqueueIMC(final InterModEnqueueEvent event)

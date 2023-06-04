@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "planetcollab:block/snail" },
+    "facing=east": { "model": "planetcollab:block/snail", "y": 90 },
+    "facing=south": { "model": "planetcollab:block/snail", "y": 180 },
+    "facing=west": { "model": "planetcollab:block/snail", "y": 270 }
+  }
+}
