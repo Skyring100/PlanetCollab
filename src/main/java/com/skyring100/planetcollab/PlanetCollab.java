@@ -1,6 +1,7 @@
 package com.skyring100.planetcollab;
 
 import com.mojang.logging.LogUtils;
+import com.skyring100.planetcollab.block.ModBlocks;
 import com.skyring100.planetcollab.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class PlanetCollab {
         IEventBus eventBus =  FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
