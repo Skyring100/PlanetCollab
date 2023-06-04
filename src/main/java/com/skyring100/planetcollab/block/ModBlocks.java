@@ -1,6 +1,7 @@
 package com.skyring100.planetcollab.block;
 
 import com.skyring100.planetcollab.PlanetCollab;
+import com.skyring100.planetcollab.block.custom.Snail;
 import com.skyring100.planetcollab.item.ModCreativeModeTab;
 import com.skyring100.planetcollab.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -22,7 +23,7 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> GHOST_BLOCK = registerBlock("ghost_block", () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE).strength(1f)), ModCreativeModeTab.DUMB_TAB);
-    public static final RegistryObject<Block> SNAIL = registerBlock("snail", () -> new Block(BlockBehaviour.Properties.of(Material.VEGETABLE).strength(1f)), ModCreativeModeTab.MAIN_TAB);
+    public static final RegistryObject<Block> SNAIL = registerBlock("snail", () -> new Snail(BlockBehaviour.Properties.of(Material.VEGETABLE).strength(1f)), ModCreativeModeTab.MAIN_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
        RegistryObject<T> toReturn  = BLOCKS.register(name, block);

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "XXx",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:iron_ingot"
+    },
+    "x": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "planetcollab:mars"
+  }
+}
