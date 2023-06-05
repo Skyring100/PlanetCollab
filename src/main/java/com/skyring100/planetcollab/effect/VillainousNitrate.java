@@ -16,22 +16,15 @@ public class VillainousNitrate extends MobEffect {
 
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        /*
-        if(pLivingEntity instanceof Player){
-            Player p = (Player) pLivingEntity;
-            p.sendMessage(new TextComponent(p.getKillCredit().toString()),p.getUUID());
-        }
-         */
         //if the entity is killed, it will be set to null
         /*
         if(){
-            pLivingEntity.sendMessage(new TextComponent("yeah hurt it"), pLivingEntity.getUUID());
             pLivingEntity.setHealth(pLivingEntity.getMaxHealth());
         }else{
             pLivingEntity.hurt(DamageSource.MAGIC, 5f);
         }
-        super.applyEffectTick(pLivingEntity, pAmplifier);
 
+        super.applyEffectTick(pLivingEntity, pAmplifier);
          */
     }
     /**
