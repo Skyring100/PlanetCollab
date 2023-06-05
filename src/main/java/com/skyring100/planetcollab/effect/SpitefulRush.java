@@ -18,7 +18,9 @@ public class SpitefulRush extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         if(pLivingEntity.isSprinting()){
-            pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 20));
+            if(!pLivingEntity.hasEffect(MobEffects.DAMAGE_BOOST)){
+                pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 150, 20));
+            }
             tickDelay = 0;
         }else if (tickDelay < maxDelay){
             tickDelay++;

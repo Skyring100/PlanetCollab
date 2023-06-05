@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.skyring100.planetcollab.block.ModBlocks;
 import com.skyring100.planetcollab.effect.ModEffects;
 import com.skyring100.planetcollab.item.ModItems;
+import com.skyring100.planetcollab.potion.ModPotions;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
@@ -38,6 +39,7 @@ public class PlanetCollab {
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModEffects.register(eventBus);
+        ModPotions.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
