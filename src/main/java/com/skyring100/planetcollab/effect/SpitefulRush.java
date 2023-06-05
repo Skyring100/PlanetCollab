@@ -10,38 +10,21 @@ import net.minecraft.world.entity.LivingEntity;
 
 public class SpitefulRush extends MobEffect {
     private final int startDelay = 100;
-    private boolean isBeginning;
-    private int tickDelay;
+    private int tickDelay = 0;
     private final int maxDelay = 10;
     protected SpitefulRush(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
-        isBeginning = true;
-        tickDelay = 0;
     }
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
-        if(tickDelay == 0){
-            pLivingEntity.sendMessage(new TextComponent("Start? "+isBeginning), pLivingEntity.getUUID());
-        }
-        if(tickDelay <= startDelay && isBeginning){
+        if(pLivingEntity.isSprinting()){
+            pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 20));
+            tickDelay = 0;
+        }else if (tickDelay < maxDelay){
             tickDelay++;
-            if(tickDelay == startDelay){
-                isBeginning = false;
-            }
-        }else{
-            if(pLivingEntity.isSprinting()){
-                if(!pLivingEntity.hasEffect(MobEffects.DAMAGE_BOOST)){
-                    pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 20));
-                }
-                tickDelay = 0;
-            }else if (tickDelay < maxDelay){
-                tickDelay++;
-            }else {
-                if(pLivingEntity.hasEffect(MobEffects.DAMAGE_BOOST)){
-                    pLivingEntity.removeEffect(MobEffects.DAMAGE_BOOST);
-                }
-                pLivingEntity.hurt(DamageSource.MAGIC, 6f);
-            }
+        }else {
+            pLivingEntity.removeEffect(MobEffects.DAMAGE_BOOST);
+            pLivingEntity.hurt(DamageSource.MAGIC, 5f);
         }
     }
     @Override
