@@ -2,6 +2,7 @@ package com.skyring100.planetcollab;
 
 import com.mojang.logging.LogUtils;
 import com.skyring100.planetcollab.block.ModBlocks;
+import com.skyring100.planetcollab.effect.ModEffects;
 import com.skyring100.planetcollab.item.ModItems;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -36,6 +37,7 @@ public class PlanetCollab {
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModEffects.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);
