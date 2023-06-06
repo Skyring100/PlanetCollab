@@ -7,10 +7,10 @@
   ],
   "key": {
     "X": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:slime_block"
     },
     "x": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:slime_ball"
     }
   },
   "result": {

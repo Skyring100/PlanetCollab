@@ -5,11 +5,14 @@ import com.skyring100.planetcollab.block.ModBlocks;
 import com.skyring100.planetcollab.effect.ModEffects;
 import com.skyring100.planetcollab.item.ModItems;
 import com.skyring100.planetcollab.potion.ModPotions;
+import com.skyring100.planetcollab.utils.BetterBrewingRecipe;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -59,7 +62,9 @@ public class PlanetCollab {
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.NERD_BLOCK.get(), RenderType.cutout());
     }
     private void setup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.EDIBLE_INSOMNIA.get(), ModPotions.EXTREME_INSOMNIA_POTION.get()));
+        });
     }
     /*
     private void enqueueIMC(final InterModEnqueueEvent event)

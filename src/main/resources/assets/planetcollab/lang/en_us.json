@@ -2,8 +2,11 @@
   "item.planetcollab.mars" : "Mars",
   "item.planetcollab.ghost_item": "Ghosty Thing",
   "block.planetcollab.ghost_block": "Ghosty Block",
+  "item.planetcollab.edible_insomnia": "Insomnicrack",
+
   "block.planetcollab.snail" : "Snail",
   "block.planetcollab.nerd_block": "Nerd Block",
+
   "itemGroup.maintab" : "Planet Collab",
   "itemGroup.dumbtab" : "Dumb Stuff",
 

@@ -2,12 +2,12 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "minecraft:block/iron_block",
-		"1": "minecraft:block/iron_block",
-		"2": "minecraft:block/iron_block",
-		"3": "minecraft:block/iron_block",
-		"4": "minecraft:block/iron_block",
-		"particle": "minecraft:block/iron_block"
+		"0": "minecraft:block/slime_block",
+		"1": "minecraft:block/slime_block",
+		"2": "minecraft:block/slime_block",
+		"3": "minecraft:block/slime_block",
+		"4": "minecraft:block/slime_block",
+		"particle": "minecraft:block/slime_block"
 	},
 	"elements": [
 		{
