@@ -3,6 +3,7 @@ package com.skyring100.planetcollab;
 import com.mojang.logging.LogUtils;
 import com.skyring100.planetcollab.block.ModBlocks;
 import com.skyring100.planetcollab.effect.ModEffects;
+import com.skyring100.planetcollab.enchantment.ModEnchantments;
 import com.skyring100.planetcollab.item.ModItems;
 import com.skyring100.planetcollab.potion.ModPotions;
 import com.skyring100.planetcollab.utils.BetterBrewingRecipe;
@@ -43,6 +44,7 @@ public class PlanetCollab {
         ModBlocks.register(eventBus);
         ModEffects.register(eventBus);
         ModPotions.register(eventBus);
+        ModEnchantments.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::clientSetup);

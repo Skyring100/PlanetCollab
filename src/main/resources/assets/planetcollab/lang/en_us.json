@@ -15,5 +15,7 @@
   "item.minecraft.potion.effect.extreme_insomnia_potion": "Extreme Insomnia Potion",
   "item.minecraft.splash_potion.effect.extreme_insomnia_potion": "Splash Potion of Extreme Insomnia",
   "item.minecraft.lingering_potion.effect.extreme_insomnia_potion": "Lingering Potion of Extreme Insomnia",
-  "item.minecraft.tipped_arrow.effect.extreme_insomnia_potion": "Arrow of Extreme Insomnia"
+  "item.minecraft.tipped_arrow.effect.extreme_insomnia_potion": "Arrow of Extreme Insomnia",
+
+  "enchantment.planetcollab.projectile_attack": "DragonBall"
 }
