@@ -11,11 +11,16 @@
   "itemGroup.dumbtab" : "Dumb Stuff",
 
   "effect.planetcollab.extreme_insomnia": "Extreme Insomnia",
-
-  "item.minecraft.potion.effect.extreme_insomnia_potion": "Extreme Insomnia Potion",
+  "item.minecraft.potion.effect.extreme_insomnia_potion": "Potion of Extreme Insomnia",
   "item.minecraft.splash_potion.effect.extreme_insomnia_potion": "Splash Potion of Extreme Insomnia",
   "item.minecraft.lingering_potion.effect.extreme_insomnia_potion": "Lingering Potion of Extreme Insomnia",
   "item.minecraft.tipped_arrow.effect.extreme_insomnia_potion": "Arrow of Extreme Insomnia",
+
+  "effect.planetcollab.spiteful_rush" : "Spiteful Rush",
+  "item.minecraft.potion.effect.spiteful_rush_potion": "Potion of Spiteful Rush",
+  "item.minecraft.splash_potion.effect.spiteful_rush_potion": "Splash Potion of Spiteful Rush",
+  "item.minecraft.lingering_potion.effect.spiteful_rush_potion": "Lingering Potion of Spiteful Rush",
+  "item.minecraft.tipped_arrow.effect.spiteful_rush_potion": "Arrow of Spiteful Rush",
 
   "enchantment.planetcollab.projectile_attack": "DragonBall"
 }

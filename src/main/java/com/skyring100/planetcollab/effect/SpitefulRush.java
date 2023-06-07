@@ -7,6 +7,9 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class SpitefulRush extends MobEffect {
     private final int startDelay = 100;
@@ -18,14 +21,12 @@ public class SpitefulRush extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         if(pLivingEntity.isSprinting()){
-            if(!pLivingEntity.hasEffect(MobEffects.DAMAGE_BOOST)){
-                pLivingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 150, 20));
-            }
+            addAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),20);
             tickDelay = 0;
         }else if (tickDelay < maxDelay){
             tickDelay++;
         }else {
-            pLivingEntity.removeEffect(MobEffects.DAMAGE_BOOST);
+            removeAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),20);
             pLivingEntity.hurt(DamageSource.MAGIC, 5f);
         }
     }
@@ -33,4 +34,5 @@ public class SpitefulRush extends MobEffect {
     public boolean isDurationEffectTick(int pDuration, int pAmplifier) {
         return true;
     }
+
 }

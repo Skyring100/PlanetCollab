@@ -9,6 +9,9 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 
+/**
+ * Potion effect that inflicts the first person low and then ramps up damage when hitting the nest target
+ */
 public class VillainousNitrate extends MobEffect {
     protected VillainousNitrate(MobEffectCategory pCategory, int pColor) {
         super(pCategory, pColor);
