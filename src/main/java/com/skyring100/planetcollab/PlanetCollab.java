@@ -66,7 +66,7 @@ public class PlanetCollab {
     private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.EDIBLE_INSOMNIA.get(), ModPotions.EXTREME_INSOMNIA_POTION.get()));
-            //BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, /**/, ModPotions.SPITEFUL_RUSH_POTION.get()));
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD, ModItems.MONSTER_MASH.get(), ModPotions.SPITEFUL_RUSH_POTION.get()));
         });
     }
     /*

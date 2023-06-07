@@ -16,6 +16,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> EDIBLE_INSOMNIA = ITEMS.register("edible_insomnia", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAIN_TAB).food(ModFoods.EDIBLE_INSOMNIA)));
 
+    public static final RegistryObject<Item> MONSTER_MASH = ITEMS.register("monster_mash", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAIN_TAB).food(ModFoods.MONSTER_MASH)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
