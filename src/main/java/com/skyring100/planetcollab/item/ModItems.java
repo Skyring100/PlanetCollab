@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, PlanetCollab.MOD_ID);
 
-    public static final RegistryObject<Item> MARS = ITEMS.register("mars", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAIN_TAB)));
+    public static final RegistryObject<Item> MARS = ITEMS.register("mars", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)));
     public static final RegistryObject<Item> GHOST_ITEM = ITEMS.register("ghost_item", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.DUMB_TAB)));
 
     public static final RegistryObject<Item> EDIBLE_INSOMNIA = ITEMS.register("edible_insomnia", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MAIN_TAB).food(ModFoods.EDIBLE_INSOMNIA)));
