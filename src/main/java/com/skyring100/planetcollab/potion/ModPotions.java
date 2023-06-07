@@ -13,7 +13,7 @@ public class ModPotions {
     public static DeferredRegister<Potion> POTIONS = DeferredRegister.create(ForgeRegistries.POTIONS, PlanetCollab.MOD_ID);
 
     public static final RegistryObject<Potion> EXTREME_INSOMNIA_POTION = POTIONS.register("extreme_insomnia_potion", () -> new Potion(new MobEffectInstance(ModEffects.EXTREME_INSOMNIA.get(), 150000, 0)));
-    public static final RegistryObject<Potion> SPITEFUL_RUSH_POTION = POTIONS.register("spiteful_rush_potion", () -> new Potion(new MobEffectInstance(ModEffects.SPITEFUL_RUSH.get(), 1800, 0)));
+    public static final RegistryObject<Potion> SPITEFUL_RUSH_POTION = POTIONS.register("spiteful_rush_potion", () -> new Potion(new MobEffectInstance(ModEffects.SPITEFUL_RUSH.get(), 900, 0)));
 
     public static void register(IEventBus event){
         POTIONS.register(event);
