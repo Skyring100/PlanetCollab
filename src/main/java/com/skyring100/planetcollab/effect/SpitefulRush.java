@@ -22,6 +22,7 @@ public class SpitefulRush extends MobEffect {
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         if(pLivingEntity.isSprinting()){
             addAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),5+pAmplifier);
+            pLivingEntity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 45, 20));
             tickDelay = 0;
         }else if (tickDelay < maxDelay){
             tickDelay++;

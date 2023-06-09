@@ -16,7 +16,7 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> VILLAINOUS_NITRATE = MOB_EFFECTS.register("villainous_nitrate", () -> new VillainousNitrate(MobEffectCategory.NEUTRAL, 0));
     public static final RegistryObject<MobEffect> EXTREME_INSOMNIA = MOB_EFFECTS.register("extreme_insomnia", () -> new ExtremeInsomnia(MobEffectCategory.HARMFUL, 200));
-    public static final RegistryObject<MobEffect> SPITEFUL_RUSH = MOB_EFFECTS.register("spiteful_rush", () -> new SpitefulRush(MobEffectCategory.NEUTRAL, 16262179).addAttributeModifier(Attributes.ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 1.0D, AttributeModifier.Operation.ADDITION).addAttributeModifier(Attributes.MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", (double)0.2F, AttributeModifier.Operation.MULTIPLY_TOTAL));
+    public static final RegistryObject<MobEffect> SPITEFUL_RUSH = MOB_EFFECTS.register("spiteful_rush", () -> new SpitefulRush(MobEffectCategory.NEUTRAL, 16262179).addAttributeModifier(Attributes.ATTACK_DAMAGE, "648D7064-6A60-4F59-8ABE-C2C23A6DD7A9", 3.0D, AttributeModifier.Operation.ADDITION).addAttributeModifier(Attributes.MOVEMENT_SPEED, "91AEAA56-376B-4498-935B-2F7F68070635", (double)0.2F, AttributeModifier.Operation.MULTIPLY_TOTAL));
     public static void register(IEventBus event){
         MOB_EFFECTS.register(event);
     }
