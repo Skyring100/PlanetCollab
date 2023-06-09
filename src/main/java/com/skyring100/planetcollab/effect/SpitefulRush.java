@@ -21,12 +21,12 @@ public class SpitefulRush extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         if(pLivingEntity.isSprinting()){
-            addAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),20);
+            addAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),5+pAmplifier);
             tickDelay = 0;
         }else if (tickDelay < maxDelay){
             tickDelay++;
         }else {
-            removeAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),20);
+            removeAttributeModifiers(pLivingEntity,pLivingEntity.getAttributes(),5+pAmplifier);
             pLivingEntity.hurt(DamageSource.MAGIC, 5f);
         }
     }
